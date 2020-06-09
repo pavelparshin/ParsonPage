@@ -22,7 +22,7 @@ class ContactsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return persons[section].contactsData.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -35,7 +35,8 @@ class ContactsTableViewController: UITableViewController {
         case 1:
             cell.textLabel?.text = persons[indexPath.section].email
             cell.imageView?.image = UIImage(systemName: "envelope.fill")
-        default: return cell
+        default:
+            cell.textLabel?.text = persons[indexPath.section].contactsData[indexPath.row]
         }
         
         return cell

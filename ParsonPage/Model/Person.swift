@@ -15,6 +15,10 @@ struct Person {
     var fullName: String {
         "\(name) \(lastname)"
     }
+    
+    var contactsData: [String] {
+        ["\(phoneNumber)", "\(email)"]
+    }
 }
 
 extension Person {
