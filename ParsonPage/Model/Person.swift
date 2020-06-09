@@ -19,6 +19,7 @@ struct Person {
 
 extension Person {
 
+    //Create random value array Person
     static func getPersons() -> [Person] {
         var persons: [Person] = []
         
@@ -33,7 +34,11 @@ extension Person {
             let lastname = lastnames.remove(at: Int.random(in: 0...lastnames.count - 1))
             let phoneNumber = phoneNumbers.remove(at: Int.random(in: 0...phoneNumbers.count - 1))
             let email = emails.remove(at: Int.random(in: 0...emails.count - 1))
-            persons.append(Person(name: name, lastname: lastname, phoneNumber: phoneNumber, email: email))
+            
+            persons.append(Person(name: name,
+                                  lastname: lastname,
+                                  phoneNumber: phoneNumber,
+                                  email: email))
         }
         
         return persons
