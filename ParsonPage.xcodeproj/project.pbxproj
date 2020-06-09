@@ -15,6 +15,8 @@
 		2BA74BA2248FB43200335318 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA74BA1248FB43200335318 /* Person.swift */; };
 		2BA74BA4248FB51200335318 /* PersonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA74BA3248FB51200335318 /* PersonsTableViewController.swift */; };
 		2BA74BA9248FB67500335318 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA74BA8248FB67500335318 /* DataManager.swift */; };
+		2BA74BAB248FCC4800335318 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA74BAA248FCC4800335318 /* ContactsTableViewController.swift */; };
+		2BA74BAD248FCDAE00335318 /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA74BAC248FCDAE00335318 /* PersonDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		2BA74BA1248FB43200335318 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		2BA74BA3248FB51200335318 /* PersonsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsTableViewController.swift; sourceTree = "<group>"; };
 		2BA74BA8248FB67500335318 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		2BA74BAA248FCC4800335318 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		2BA74BAC248FCDAE00335318 /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				2BA74BA3248FB51200335318 /* PersonsTableViewController.swift */,
+				2BA74BAC248FCDAE00335318 /* PersonDetailsViewController.swift */,
+				2BA74BAA248FCC4800335318 /* ContactsTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -194,9 +200,11 @@
 			files = (
 				2BA74B89248FB32500335318 /* AppDelegate.swift in Sources */,
 				2BA74BA9248FB67500335318 /* DataManager.swift in Sources */,
+				2BA74BAB248FCC4800335318 /* ContactsTableViewController.swift in Sources */,
 				2BA74BA2248FB43200335318 /* Person.swift in Sources */,
 				2BA74BA4248FB51200335318 /* PersonsTableViewController.swift in Sources */,
 				2BA74B8B248FB32500335318 /* SceneDelegate.swift in Sources */,
+				2BA74BAD248FCDAE00335318 /* PersonDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
