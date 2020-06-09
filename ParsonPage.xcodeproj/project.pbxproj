@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		2BA74B89248FB32500335318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA74B88248FB32500335318 /* AppDelegate.swift */; };
 		2BA74B8B248FB32500335318 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA74B8A248FB32500335318 /* SceneDelegate.swift */; };
-		2BA74B8D248FB32500335318 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA74B8C248FB32500335318 /* ViewController.swift */; };
 		2BA74B90248FB32500335318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA74B8E248FB32500335318 /* Main.storyboard */; };
 		2BA74B92248FB32700335318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA74B91248FB32700335318 /* Assets.xcassets */; };
 		2BA74B95248FB32700335318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA74B93248FB32700335318 /* LaunchScreen.storyboard */; };
+		2BA74BA2248FB43200335318 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA74BA1248FB43200335318 /* Person.swift */; };
+		2BA74BA4248FB51200335318 /* PersonsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA74BA3248FB51200335318 /* PersonsTableViewController.swift */; };
+		2BA74BA9248FB67500335318 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA74BA8248FB67500335318 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2BA74B85248FB32500335318 /* ParsonPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParsonPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA74B88248FB32500335318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BA74B8A248FB32500335318 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2BA74B8C248FB32500335318 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2BA74B8F248FB32500335318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BA74B91248FB32700335318 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BA74B94248FB32700335318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BA74B96248FB32700335318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BA74BA1248FB43200335318 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		2BA74BA3248FB51200335318 /* PersonsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsTableViewController.swift; sourceTree = "<group>"; };
+		2BA74BA8248FB67500335318 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,65 @@
 		2BA74B87248FB32500335318 /* ParsonPage */ = {
 			isa = PBXGroup;
 			children = (
-				2BA74B88248FB32500335318 /* AppDelegate.swift */,
-				2BA74B8A248FB32500335318 /* SceneDelegate.swift */,
-				2BA74B8C248FB32500335318 /* ViewController.swift */,
-				2BA74B8E248FB32500335318 /* Main.storyboard */,
-				2BA74B91248FB32700335318 /* Assets.xcassets */,
-				2BA74B93248FB32700335318 /* LaunchScreen.storyboard */,
-				2BA74B96248FB32700335318 /* Info.plist */,
+				2BA74B9F248FB3E000335318 /* ViewControllers */,
+				2BA74BA5248FB5F100335318 /* Data */,
+				2BA74BA0248FB3F500335318 /* Model */,
+				2BA74B9D248FB3A700335318 /* Storyboards */,
+				2BA74B9E248FB3C300335318 /* Source */,
+				2BA74B9C248FB34300335318 /* SupportingFiles */,
 			);
 			path = ParsonPage;
+			sourceTree = "<group>";
+		};
+		2BA74B9C248FB34300335318 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2BA74B88248FB32500335318 /* AppDelegate.swift */,
+				2BA74B8A248FB32500335318 /* SceneDelegate.swift */,
+				2BA74B96248FB32700335318 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2BA74B9D248FB3A700335318 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2BA74B8E248FB32500335318 /* Main.storyboard */,
+				2BA74B93248FB32700335318 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2BA74B9E248FB3C300335318 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2BA74B91248FB32700335318 /* Assets.xcassets */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2BA74B9F248FB3E000335318 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2BA74BA3248FB51200335318 /* PersonsTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2BA74BA0248FB3F500335318 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2BA74BA1248FB43200335318 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2BA74BA5248FB5F100335318 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2BA74BA8248FB67500335318 /* DataManager.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +192,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BA74B8D248FB32500335318 /* ViewController.swift in Sources */,
 				2BA74B89248FB32500335318 /* AppDelegate.swift in Sources */,
+				2BA74BA9248FB67500335318 /* DataManager.swift in Sources */,
+				2BA74BA2248FB43200335318 /* Person.swift in Sources */,
+				2BA74BA4248FB51200335318 /* PersonsTableViewController.swift in Sources */,
 				2BA74B8B248FB32500335318 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ZXQUQVQEL;
-				INFOPLIST_FILE = ParsonPage/Info.plist;
+				INFOPLIST_FILE = ParsonPage/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.pavelparshin.ParsonPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ZXQUQVQEL;
-				INFOPLIST_FILE = ParsonPage/Info.plist;
+				INFOPLIST_FILE = ParsonPage/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.pavelparshin.ParsonPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
