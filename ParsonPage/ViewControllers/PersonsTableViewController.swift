@@ -35,9 +35,16 @@ class PersonsTableViewController: UITableViewController {
         return cell
     }
     
+    //MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         let personDetailsVC = segue.destination as! PersonDetailsViewController
         personDetailsVC.personDetails = persons[indexPath.row]
+        
+        let tabBarController = segue.destination as! UITabBarController
+        let contactsTVC = tabBarController.viewControllers?.last as! ContactsTableViewController
+        
+//        contactsTVC.persons = persons
+        contactsTVC.lol = "fjsfkljlkfg"
     }
 }

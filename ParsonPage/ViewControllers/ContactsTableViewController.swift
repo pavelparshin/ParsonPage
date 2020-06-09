@@ -9,7 +9,14 @@
 import UIKit
 
 class ContactsTableViewController: UITableViewController {
-
+    
+    var persons: [Person] {
+        let main = tabBarController?.viewControllers?.first as! PersonsTableViewController
+        return main.persons
+    }
+    
+    var lol: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,24 +30,22 @@ class ContactsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return persons.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return 0
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell...
+        cell.textLabel?.text = persons[indexPath.row].phoneNumber
+        cell.detailTextLabel?.text = persons[indexPath.row].email
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
