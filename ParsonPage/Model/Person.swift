@@ -7,17 +7,13 @@
 //
 
 struct Person {
-    var name: String
-    var lastname: String
-    var phoneNumber: String
-    var email: String
+    let name: String
+    let lastname: String
+    let phoneNumber: String
+    let email: String
     
     var fullName: String {
         "\(name) \(lastname)"
-    }
-    
-    var contactsData: [String] {
-        ["\(phoneNumber)", "\(email)"]
     }
 }
 

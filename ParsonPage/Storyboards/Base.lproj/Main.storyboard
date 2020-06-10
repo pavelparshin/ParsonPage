@@ -170,13 +170,14 @@
             </objects>
             <point key="canvasLocation" x="219" y="138"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Person-->
         <scene sceneID="qGE-0p-cW7">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="nfS-OY-Xxi" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="Ucm-05-7pX"/>
+                    <navigationItem key="navigationItem" title="Person" id="Ucm-05-7pX"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SnP-e3-hHv">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

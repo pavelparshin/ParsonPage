@@ -22,7 +22,7 @@ class ContactsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return persons[section].contactsData.count
+        return 2
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -32,13 +32,10 @@ class ContactsTableViewController: UITableViewController {
         case 0:
             cell.textLabel?.text = persons[indexPath.section].phoneNumber
             cell.imageView?.image = UIImage(systemName: "phone.fill")
-        case 1:
+        default:
             cell.textLabel?.text = persons[indexPath.section].email
             cell.imageView?.image = UIImage(systemName: "envelope.fill")
-        default:
-            cell.textLabel?.text = persons[indexPath.section].contactsData[indexPath.row]
         }
-        
         return cell
     }
     
@@ -50,7 +47,7 @@ class ContactsTableViewController: UITableViewController {
     //MARK: Visual Update
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         guard let header = view as? UITableViewHeaderFooterView else { return }
-        header.textLabel?.font = UIFont.boldSystemFont(ofSize: 17)
+        header.textLabel?.font = .boldSystemFont(ofSize: 17)
         header.textLabel?.textAlignment = .center
     }
 }
